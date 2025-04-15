@@ -12,22 +12,20 @@ GO
     seller_id INTEGER NOT NULL, 
     timestamp datetime NOT NULL,
     PRIMARY KEY (transaction_id)
-GO
+);
 
 CREATE TABLE dbo.items_transaction (
     transaction_id INTEGER NOT NULL,
     items_id INTEGER NOT NULL,
     amount INTEGER NOT NULL CHECK (amount>0),
-    PRIMARY KEY (transaction_id, items_id))
-GO
+    PRIMARY KEY (transaction_id, items_id));
 
 CREATE TABLE dbo.Reports (
     reports_id INTEGER NOT NULL, 
     generated_for INTEGER NOT NULL, 
     data NVARCHAR(100) NOT NULL, 
     created_at DATE NOT NULL,
-    PRIMARY KEY (reports_id))
-GO
+    PRIMARY KEY (reports_id));
 
 -- Transfer tables to OnlineMarketPlace schema
 ALTER SCHEMA OnlineMarketPlace TRANSFER dbo.Transactions
