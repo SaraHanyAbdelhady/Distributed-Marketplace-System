@@ -17,7 +17,7 @@ VALUES
 (105, 5, 'Camera', 'DSLR camera with 24MP sensor', 600, 'A', '2023-05-18');
 
 
-INSERT INTO OnlineMarketPlace.Transactions (transactions_id, buyer_id, seller_id, timestamp)
+INSERT INTO OnlineMarketPlace.Transactions (transaction_id, buyer_id, seller_id, timestamp)
 VALUES
 (1001, 2, 1, '2023-03-01 10:15:00'),
 (1002, 3, 2, '2023-03-05 14:30:00'),

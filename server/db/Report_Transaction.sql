@@ -38,11 +38,11 @@ GO
 -- Add foreign key constraints with correct syntax
 ALTER TABLE OnlineMarketPlace.Transactions
 ADD CONSTRAINT FK_Transactions_Buyer
-FOREIGN KEY (buyer_id) REFERENCES Users(user_id);
+FOREIGN KEY (buyer_id) REFERENCES OnlineMarketPlace.Users(user_id);
 
 ALTER TABLE OnlineMarketPlace.Transactions
 ADD CONSTRAINT FK_Transactions_Seller
-FOREIGN KEY (seller_id) REFERENCES Users(user_id);
+FOREIGN KEY (seller_id) REFERENCES OnlineMarketPlace.Users(user_id);
 
 ALTER TABLE OnlineMarketPlace.items_transaction
 ADD CONSTRAINT FK_ItemsTransaction_Transaction
@@ -50,8 +50,8 @@ FOREIGN KEY (transaction_id) REFERENCES OnlineMarketPlace.Transactions(transacti
 
 ALTER TABLE OnlineMarketPlace.items_transaction
 ADD CONSTRAINT FK_ItemsTransaction_Item
-FOREIGN KEY (items_id) REFERENCES ITEMS(item_id);
+FOREIGN KEY (items_id) REFERENCES OnlineMarketPlace.ITEMS(item_id);
 
 ALTER TABLE OnlineMarketPlace.Reports 
 ADD CONSTRAINT FK_Reports_User
-FOREIGN KEY (generated_for) REFERENCES Users(user_id);
+FOREIGN KEY (generated_for) REFERENCES OnlineMarketPlace.Users(user_id);
