@@ -10,7 +10,7 @@ CREATE TABLE dbo.Inventory (
     user_id INTEGER NOT NULL, 
     item_id INTEGER NOT NULL, 
     status VARCHAR(10) NOT NULL, 
-    quantity INTEGER NOT NULL CHECK(quantity>0), 
+    quantity INTEGER NOT NULL CHECK(quantity > 0), 
     updated_at DATE NOT NULL,
     PRIMARY KEY (user_id, item_id)
 )
@@ -38,3 +38,7 @@ CREATE TABLE ExternalStores (
     auth_token VARCHAR(255),
     last_sync DATETIME
 );
+
+
+ALTER SCHEMA OnlineMarketPlace TRANSFER dbo.ExternalStores
+GO
