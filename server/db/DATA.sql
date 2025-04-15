@@ -34,3 +34,28 @@ VALUES
 (1003, 103, 1),
 (1004, 105, 1),
 (1005, 104, 1);
+
+INSERT INTO OnlineMarketPlace.Reports (reports_id, generated_for, data, created_at)
+VALUES
+(501, 1, 'Monthly sales report for January 2023', '2023-02-01'),
+(502, 2, 'Monthly sales report for February 2023', '2023-03-01'),
+(503, 3, 'Monthly sales report for March 2023', '2023-04-01'),
+(504, 4, 'Monthly sales report for April 2023', '2023-05-01'),
+(505, 5, 'Monthly sales report for May 2023', '2023-06-01');
+
+INSERT INTO OnlineMarketPlace.Inventory (user_id, item_id, status, quantity, updated_at)
+VALUES
+(1, 101, 'Active', 5, '2023-06-01'),
+(2, 102, 'Active', 3, '2023-06-02'),
+(3, 103, 'Inactive', 0, '2023-06-03'),
+(4, 104, 'Active', 10, '2023-06-04'),
+(5, 105, 'Active', 2, '2023-06-05');
+
+
+INSERT INTO ExternalStores (store_id, api_key, store_name, endpoint_url, auth_token, last_sync)
+VALUES
+(1, 'ak_123456789', 'TechGadgets', 'https://api.techgadgets.com/v1', 'tok_987654321', '2023-06-10 09:15:00'),
+(2, 'ak_987654321', 'ElectroWorld', 'https://api.electroworld.net/v2', 'tok_123456789', '2023-06-11 14:30:00'),
+(3, 'ak_555555555', 'GizmoHub', 'https://api.gizmohub.io/v3', 'tok_444444444', '2023-06-12 11:45:00'),
+(4, 'ak_111222333', 'DigitalBazaar', 'https://api.digitalbazaar.com/v1', 'tok_333222111', '2023-06-13 16:20:00'),
+(5, 'ak_999888777', 'FutureTech', 'https://api.futuretech.store/v2', 'tok_777888999', '2023-06-14 10:00:00');
