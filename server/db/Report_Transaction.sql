@@ -6,14 +6,14 @@ END
 GO
 
 -- Create Tables first in dbo schema
- /*CREATE TABLE dbo.Transactions (
+ CREATE TABLE dbo.Transactions (
     transaction_id INTEGER NOT NULL, 
     buyer_id INTEGER NOT NULL, 
     seller_id INTEGER NOT NULL, 
     timestamp datetime NOT NULL,
     PRIMARY KEY (transaction_id)
 GO
-*/
+
 CREATE TABLE dbo.items_transaction (
     transaction_id INTEGER NOT NULL,
     items_id INTEGER NOT NULL,
