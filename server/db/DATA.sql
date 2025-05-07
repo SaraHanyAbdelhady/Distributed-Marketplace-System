@@ -1,3 +1,6 @@
+USE [MarketPlace]
+GO
+
 INSERT INTO OnlineMarketPlace.Users (user_id, username, password_hash, email, phone, created_at, balance)
 VALUES
 (1, 'john_doe', 'abc123', 'john@example.com', '555-1234', '2023-01-15', 1000),

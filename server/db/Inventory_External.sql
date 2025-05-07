@@ -1,3 +1,6 @@
+USE [MarketPlace]
+GO
+
 -- First ensure the schema exists (correcting the typo in schema name)
 IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'OnlineMarketPlace')
 BEGIN

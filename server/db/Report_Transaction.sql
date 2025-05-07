@@ -1,3 +1,6 @@
+USE [MarketPlace]
+GO
+
 -- First create the schema if it doesn't exist
 IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'OnlineMarketPlace')
 BEGIN
@@ -6,7 +9,7 @@ END
 GO
 
 -- Create Tables first in dbo schema
- CREATE TABLE dbo.Transactions (
+ CREATE TABLE OnlineMarketPlace.Transactions (
     transaction_id INTEGER NOT NULL, 
     buyer_id INTEGER NOT NULL, 
     seller_id INTEGER NOT NULL, 
