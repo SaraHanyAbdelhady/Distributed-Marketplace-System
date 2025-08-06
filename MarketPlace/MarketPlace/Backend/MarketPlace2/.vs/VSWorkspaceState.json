@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MarketPlace",
+    "\\MarketPlace\\MarketPlace",
+    "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.API",
+    "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.API\\Controllers",
+    "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.BLL",
+    "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.BLL\\Dtos",
+    "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.DAL",
+    "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.DAL\\Data",
+    "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.DAL\\Data\\Models"
+  ],
+  "SelectedNode": "\\MarketPlace\\MarketPlace\\E-CommerceWebsite.API.sln",
+  "PreviewInSolutionExplorer": false
+}
